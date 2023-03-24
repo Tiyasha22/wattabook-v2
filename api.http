@@ -1,0 +1,40 @@
+#get all books
+GET http://localhost:3001/books HTTP/1.1
+Content-Type: application/json
+
+
+###
+#create a book
+POST http://localhost:3001/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"The Vault of Vishnu"
+}
+
+###
+POST http://localhost:3001/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"The Rozabel Line"
+}
+
+###
+#update a book info
+PUT http://localhost:3001/books/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"The krishna key"
+  
+}
+###
+#delete a book
+DELETE  http://localhost:3001/books/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"The krishna key"
+  
+}
